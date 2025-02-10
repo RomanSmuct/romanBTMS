@@ -5,12 +5,12 @@
 using namespace std;
 
 int main() {
-    // Variables to hold user input
+     
     string nid, trainNumber, from, to;
     int ticketQuantity;
-    const int ticketPrice = 150; // Price per ticket in BDT
+    const int ticketPrice = 695; 
 
-    // Input details
+   
     cout << "Welcome to Bangladesh Railway Ticketing System" << endl;
     cout << "Enter your NID number: ";
     cin >> nid;
@@ -19,7 +19,7 @@ int main() {
     cin >> trainNumber;
 
     cout << "Enter starting station (From): ";
-    cin.ignore(); // To handle newline character left in the buffer
+    cin.ignore();  
     getline(cin, from);
 
     cout << "Enter destination station (To): ";
@@ -28,10 +28,10 @@ int main() {
     cout << "Enter ticket quantity: ";
     cin >> ticketQuantity;
 
-    // Calculate total bill
+  
     int totalBill = ticketQuantity * ticketPrice;
 
-    // Display ticket details
+   
     cout << "\n--- Ticket Details ---" << endl;
     cout << "Passenger NID: " << nid << endl;
     cout << "Train Number: " << trainNumber << endl;
